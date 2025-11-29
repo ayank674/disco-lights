@@ -2,6 +2,9 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+
+/* FUNCTIONS */
+
 // Generates a random r g b color of a given brightness
 void random_color(uint8_t brightness, uint8_t *r, uint8_t *g, uint8_t *b) {
   uint16_t hue = rand() % 360; // Random hue
