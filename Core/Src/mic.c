@@ -14,6 +14,7 @@ int16_t mic_dma_buff[MIC_BUFF_SIZE * 2] = {0};
 
 // Initialize capturing mic input
 void mic_init() {
+    log_init();
     HAL_I2S_Receive_DMA(&hi2s1, (uint16_t *) mic_dma_buff, MIC_BUFF_SIZE * 2);
 }
 

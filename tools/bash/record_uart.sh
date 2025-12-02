@@ -36,8 +36,19 @@ stty -F "$PORT" raw "$BAUD" cs8 -cstopb -parenb -ixon -crtscts
 echo "Recording from $PORT at $BAUD baud for $DURATION seconds..."
 echo "Output will be saved to $OUTFILE"
 
+# Open Serial Port
+exec 3<> "$PORT"
+
+## Sync byte Start
+echo -n "STRT" >&3
+
 # Record
-timeout "${DURATION}s" cat "$PORT" > "$OUTFILE"
+timeout "${DURATION}s" cat <&3 > "$OUTFILE"
+
+sleep 0.5
+
+## Sync byte stop
+echo -n "STOP" >&3
 
 echo "Recording complete."
 FILESIZE=$(stat -c%s "$OUTFILE")
