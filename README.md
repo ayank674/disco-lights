@@ -61,6 +61,7 @@ git clone https://github.com/ayank674/disco-lights.git
 ```
 
 ## TODO
+- ~~Your MOM~~ 😝
 - Create a DSP (Digital Signal Processing) alogrithm to detect beats/ manipulate brightness of LED based on the input sound.
     - Analyze the tools/python/analyze.ipynb python notebook to get started with the kind of data we get.
     - Either create a Python script or C Program and use some of the logged music samples from logs/ to return brightness in __real time__.
