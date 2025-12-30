@@ -2,6 +2,9 @@
 
 ### A STM32 NUCLEO-F767ZI board based music-synced LED light project.
 
+## A Small Demo
+
+
 ## HARDWARE
 ### Parts Used:
 - [nucleo-f767zi](https://www.st.com/en/evaluation-tools/nucleo-f767zi.html)
@@ -59,18 +62,3 @@ This allows us to edit, run and debug our code right from the VS Code
 ```bash
 git clone https://github.com/ayank674/disco-lights.git
 ```
-
-## TODO
-- ~~Your MOM~~ 😝
-- Create a DSP (Digital Signal Processing) alogrithm to detect beats/ manipulate brightness of LED based on the input sound.
-    - Analyze the tools/python/analyze.ipynb python notebook to get started with the kind of data we get.
-    - Either create a Python script or C Program and use some of the logged music samples from logs/ to return brightness in __real time__.
-    - Don't try too hard on the algorithm as we need it to be reasonably efficient to run on a small MCU chip.
-    - If possible, you can do tempo detection as well to get a pace of the music and try to adjust the color according to it.
-    - __References you can begin with__:
-        - [Beat Detection](https://www.reddit.com/r/DSP/comments/1g5zrz2/realtime_beat_detection/)
-        - [BPM Detection](https://www.reddit.com/r/DSP/comments/jjowj1/realtime_bpm_detection/)
-        - [Real Time Beat Detection Blog](https://dev.to/hacker_ea/real-time-beat-detection-in-web-based-dj-applications-40p3)
-        - [Tempo Classifier](https://youtu.be/yMbewdnupwU?si=-fFnKUJjP4iFMO2q)
-        - [Tempo Sync 101](https://youtu.be/MFJI4j9uusc?si=qpt38_XPU_6r_K3u)
-        - Any other cool sources you find :)
