@@ -5,6 +5,10 @@
 ## A Small Demo
 
 
+https://github.com/user-attachments/assets/ccfe4840-2e80-43e9-9387-26ac57b7e371
+
+
+
 ## HARDWARE
 ### Parts Used:
 - [nucleo-f767zi](https://www.st.com/en/evaluation-tools/nucleo-f767zi.html)
